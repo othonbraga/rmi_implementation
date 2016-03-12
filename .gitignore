@@ -4,9 +4,7 @@
 .DS_Store
 
 # IntelliJ files
-.rmi_implementation.iml
-.rmi_implementation.ipr
-.rmi_implementation.iws
+.idea/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
