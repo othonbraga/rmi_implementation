@@ -30,13 +30,15 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/rmi_example/rmi_example.iml" filepath="$PROJECT_DIR$/rmi_example/rmi_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmi_implementation.iml" filepath="$PROJECT_DIR$/rmi_implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmi_specifications/rmi_specifications.iml" filepath="$PROJECT_DIR$/rmi_specifications/rmi_specifications.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
