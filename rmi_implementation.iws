@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fb6ded6-e03c-4c2e-9a1a-51f412082e5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MathObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmi_example/rmi_example.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmi_specifications/rmi_specifications.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmi_implementation.ipr" afterPath="$PROJECT_DIR$/rmi_implementation.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmi_implementation.iws" afterPath="$PROJECT_DIR$/rmi_implementation.iws" />
     </list>
     <ignored path="rmi_implementation.iws" />
@@ -30,7 +26,18 @@
     <favorites_list name="rmi_implementation" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ServidorMat.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rmi_example/src/ServidorMat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.034965035" vertical-offset="0" max-vertical-offset="429">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,6 +141,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmi_implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmi_implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmi_example" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,6 +341,13 @@
       <option name="number" value="Default" />
       <updated>1457724812956</updated>
     </task>
+    <task id="LOCAL-00001" summary="modulos com codigos exemplos do exercicio, bem como um exemplo de uso de rmi">
+      <created>1457800461297</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1457800461298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -392,7 +420,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="modulos com codigos exemplos do exercicio, bem como um exemplo de uso de rmi" />
+    <option name="LAST_COMMIT_MESSAGE" value="modulos com codigos exemplos do exercicio, bem como um exemplo de uso de rmi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -498,14 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmi_example/src/ServidorMat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.022970904" vertical-offset="0" max-vertical-offset="653">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rmi_example/src/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8269525" vertical-offset="0" max-vertical-offset="840">
@@ -515,6 +536,14 @@
             <element signature="method#area#0;class#Cliente#0" expanded="true" />
             <element signature="method#perimetro#0;class#Cliente#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmi_example/src/ServidorMat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034965035" vertical-offset="0" max-vertical-offset="429">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
