@@ -1,6 +1,8 @@
 package source;
 
-public class RemoteObjectRef {
+import calculadora.*;
+
+public class RemoteObjectRef implements Remote{
     String IP_adr;
     int Port;
     int Obj_Key;
@@ -36,11 +38,14 @@ public class RemoteObjectRef {
 
         //-- meu codigo inicio
 
-        Class c = Class.forName(Remote_Interface_Name);
-        Object o = c.newInstance();
+        Class c = Class.forName("calculadora."+ Remote_Interface_Name + "_stub");
+        CalculadoraInterface_stub stub = (CalculadoraInterface_stub) c.newInstance();
+
+        //RemoteObjectRef ror = new RemoteObjectRef(IP_adr, Port, Obj_Key, Remote_Interface_Name);
+		//stub.setRor(ror);
 
         //-- meu codigo fim
 
-        return o;
+        return stub;
     }
 }

@@ -21,7 +21,7 @@ public class SimpleRegistryServer {
         // I do no checking. A user supplies one argument,
         // which is a port name for the registry
         // at the host in which it is running.
-        int port = Integer.parseInt("12345");
+        int port = Integer.parseInt("3122");
 
         // create a socket.
         ServerSocket serverSoc = new ServerSocket(port);
@@ -29,12 +29,6 @@ public class SimpleRegistryServer {
 
         // create a table of keys (service names) and ROR.
         Hashtable table = new Hashtable();
-
-        //--- meu codigo inicio
-
-        //table.put("soma", );
-
-        //--- meu codigo fim
 
         // loop: accept, receive request, reply, close.
         // again no error checking: this is not robust at all.

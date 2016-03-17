@@ -1,13 +1,13 @@
 package zipCode;
 
-// in implementation, you do not have to extend this as in Java RMI.
+// in implementation, you do not have to extend this as in Java calculadora.RMI.
 // in your design, however, you can do so.
 // it is assumed that this is not directly called but as in:
 //
 //   java source.yourRMI ZipCodeServerImpl registryhost resigstryport servicename
 //
 // therefore it does not contain main: new object creation, binding etc. is 
-// done via your RMI.
+// done via your calculadora.RMI.
 
 public class ZipCodeServerImpl
         implements ZipCodeServer {

@@ -1,6 +1,6 @@
 package source;
 /* This does not offer the code of the whole communication module
-   (CM) for RMI: but it gives some hints about how you can make 
+   (CM) for calculadora.RMI: but it gives some hints about how you can make
    it. I call it simply "source.yourRMI".
 
    For example, it  shows how you can get the host name etc.,
