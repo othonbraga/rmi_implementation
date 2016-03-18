@@ -39,8 +39,8 @@ public class Servidor {
 
 
         // then register it into the table.
-        tbl.addObj(host, port, (Calculadora) class1.newInstance(), 1);
-        tbl.addObj(host, port, (CalculadoraCientificaImpl) class2.newInstance(), 2);
+        tbl.addObj(host, port, new Calculadora() , 1);
+        tbl.addObj(host, port, new CalculadoraCientificaImpl(), 2);
 
         // create a socket.
         ServerSocket serverSoc = new ServerSocket(port);
@@ -77,7 +77,14 @@ public class Servidor {
             Package p = (Package) in.readObject();
             Object obj = tbl.findObj(p.serviceKey);
 
-            Number result = (Number) obj.getClass().getMethod(p.operation).invoke(obj, p.attributs[0], p.attributs[1]);
+            System.out.println("attb1 " + p.attributs[0]);
+            System.out.println("attb2 " + p.attributs[1]);
+//
+//            if (p.attributs.length > 1){
+//                
+//            }
+
+            Number result = (Number) obj.getClass().getMethod(p.operation, float.class, float.class).invoke(obj, p.attributs[0], p.attributs[1]);
             p.result = result.floatValue();
 
             out.writeObject(p);

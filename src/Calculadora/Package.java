@@ -14,6 +14,6 @@ public class Package implements Serializable {
     public Package(int serviceKey, String operation, float[] attibuts) {
         this.serviceKey = serviceKey;
         this.operation = operation;
-        this.attributs = attributs;
+        this.attributs = attibuts;
     }
 }
