@@ -2,9 +2,8 @@ package calculadora;
 
 import source.RORtbl;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -17,7 +16,7 @@ public class Servidor {
     static int port;
 
     public static void main (String args[]) throws Exception{
-        String InitialClassName = "Calculadora";
+        //String InitialClassName = "Calculadora";
         String registryHost = "127.0.0.1";
         int registryPort = Integer.parseInt("3021");
         String serviceName = "calculadora";
@@ -25,7 +24,9 @@ public class Servidor {
         host = (InetAddress.getLocalHost()).getHostName();
         port = 3121;
 
-        Class initialclass = Class.forName("calculadora." + InitialClassName);
+        Class class1 = Class.forName("calculadora.Calculadora");
+        Class class2 = Class.forName("calculadora.CalculadoraCientificaImpl");
+
         //Class initialskeleton = Class.forName(InitialClassName + "_skel");
 
         // you should also create a remote object table here.
@@ -34,10 +35,12 @@ public class Servidor {
         RORtbl tbl = new RORtbl();
 
         // after that, you create one remote object of initialclass.
-        Calculadora calculadora = (Calculadora) initialclass.newInstance();
+        //Calculadora calculadora = (Calculadora) class1.newInstance();
+
 
         // then register it into the table.
-        tbl.addObj(host, port, calculadora);
+        tbl.addObj(host, port, (Calculadora) class1.newInstance(), 1);
+        tbl.addObj(host, port, (CalculadoraCientificaImpl) class2.newInstance(), 2);
 
         // create a socket.
         ServerSocket serverSoc = new ServerSocket(port);
@@ -68,34 +71,37 @@ public class Servidor {
 
             System.out.println("novo pedido");
 
-//          ObjectInputStream in = new ObjectInputStream(cliente.getInputStream());
-//			ObjectOutputStream out = new ObjectOutputStream(cliente.getOutputStream());
+            ObjectInputStream in = new ObjectInputStream(cliente.getInputStream());
+			ObjectOutputStream out = new ObjectOutputStream(cliente.getOutputStream());
 
-            BufferedReader in =
-                new BufferedReader(new InputStreamReader(cliente.getInputStream()));
-            PrintWriter out =
-                new PrintWriter(cliente.getOutputStream(), true);
+            Package p = (Package) in.readObject();
+            Object obj = tbl.findObj(p.serviceKey);
 
-            String method = in.readLine();
-            float result = 0.0f;
+            Number result = (Number) obj.getClass().getMethod(p.operation).invoke(obj, p.attributs[0], p.attributs[1]);
+            p.result = result.floatValue();
+
+            out.writeObject(p);
+
+            //String method = in.readLine();
+            //float result = 0.0f;
 
             // isso deveria ser feito pelo despachante
 
             //Method m = Calculadora.class.getInterfaces()[0].getDeclaredMethod(""); // le a primeira linha e procura o método
 
-            if (method.equals("soma")) {
-                result = calculadora.soma(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
-            } else if (method.equals("subtrai")) {
-                result = calculadora.subtrai(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
-            } else if (method.equals("divide")) {
-                result = calculadora.divide(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
-            }else if (method.equals("multiplica")) {
-                result = calculadora.multiplica(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
-            }else{
-                System.out.println("metodo inexistente");
-            }
+//            if (method.equals("soma")) {
+//                result = calculadora.soma(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
+//            } else if (method.equals("subtrai")) {
+//                result = calculadora.subtrai(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
+//            } else if (method.equals("divide")) {
+//                result = calculadora.divide(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
+//            }else if (method.equals("multiplica")) {
+//                result = calculadora.multiplica(Float.parseFloat(in.readLine()), Float.parseFloat(in.readLine()));
+//            }else{
+//                System.out.println("metodo inexistente");
+//            }
 
-            out.println(result);
+            //out.println(result);
             cliente.close();
         }
     }

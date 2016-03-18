@@ -21,8 +21,9 @@ public class RORtbl {
     // Using it, you can construct a ROR. 
     // The host and port are not used unless it is exported outside.
     // In any way, it is better to have it for uniformity.
-    public void addObj(String host, int port, Object o) {
-        table.put(new RemoteObjectRef(host, port, 1, o.getClass().getInterfaces().toString()), o);
+    public void addObj(String host, int port, Object o, int serviceKey) {
+        //table.put(new RemoteObjectRef(host, port, 1, o.getClass().getInterfaces().toString()), o);
+        table.put(serviceKey, o);
     }
 
     // given ror, find the corresponding object.
@@ -33,5 +34,11 @@ public class RORtbl {
         }
         System.out.print("ror nao encontrado na RORtbl");
         return null;
+    }
+
+    public Object findObj(int serviceKey) {
+        // if you use a hash table this is easy.
+        Object o = table.containsKey(serviceKey);
+        return o;
     }
 }
