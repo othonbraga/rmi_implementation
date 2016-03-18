@@ -25,7 +25,7 @@ public class Servidor {
         port = 3121;
 
         Class class1 = Class.forName("calculadora.Calculadora");
-        Class class2 = Class.forName("calculadora.CalculadoraCientificaImpl");
+        Class class2 = Class.forName("calculadora.CalculadoraCientifica");
 
         //Class initialskeleton = Class.forName(InitialClassName + "_skel");
 
@@ -40,7 +40,7 @@ public class Servidor {
 
         // then register it into the table.
         tbl.addObj(host, port, new Calculadora() , 1);
-        tbl.addObj(host, port, new CalculadoraCientificaImpl(), 2);
+        tbl.addObj(host, port, new CalculadoraCientifica(), 2);
 
         // create a socket.
         ServerSocket serverSoc = new ServerSocket(port);
@@ -77,14 +77,12 @@ public class Servidor {
             Package p = (Package) in.readObject();
             Object obj = tbl.findObj(p.serviceKey);
 
-            System.out.println("attb1 " + p.attributs[0]);
-            System.out.println("attb2 " + p.attributs[1]);
-//
-//            if (p.attributs.length > 1){
-//                
-//            }
-
-            Number result = (Number) obj.getClass().getMethod(p.operation, float.class, float.class).invoke(obj, p.attributs[0], p.attributs[1]);
+            Number result;
+            if (p.attributs.length < 2){
+                result = (Number) obj.getClass().getMethod(p.operation, float.class).invoke(obj, p.attributs[0]);
+            }else{
+                result = (Number) obj.getClass().getMethod(p.operation, float.class, float.class).invoke(obj, p.attributs[0], p.attributs[1]);
+            }
             p.result = result.floatValue();
 
             out.writeObject(p);

@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fb6ded6-e03c-4c2e-9a1a-51f412082e5a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculadora/Package.java" afterPath="$PROJECT_DIR$/src/calculadora/Package.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaInterface_stub.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl_stub.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java" afterPath="$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculadora/Cliente.java" afterPath="$PROJECT_DIR$/src/calculadora/Cliente.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java" afterPath="$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java" afterPath="$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculadora/Servidor.java" afterPath="$PROJECT_DIR$/src/calculadora/Servidor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmi_implementation.iws" afterPath="$PROJECT_DIR$/rmi_implementation.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java" afterPath="$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java" />
     </list>
     <ignored path="rmi_implementation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,42 +37,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Servidor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/Servidor.java">
+      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49778762" vertical-offset="900" max-vertical-offset="1695">
-              <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="675">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Cliente#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculadora.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/Calculadora.java">
+      <file leaf-file-name="CalculadoraCientificaInterface_stub.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaInterface_stub.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="method#raiz#0;class#CalculadoraCientificaInterface_stub#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Servidor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/Servidor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1665">
+              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Package.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/Package.java">
+      <file leaf-file-name="CalculadoraCientifica.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleRegistryServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/SimpleRegistryServer.java">
+      <file leaf-file-name="RemoteObjectRef.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="2325">
-              <caret line="129" column="55" selection-start-line="129" selection-start-column="52" selection-end-line="129" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="810">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommunicationModeServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationModeServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="452">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testRebind.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommunicationMode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationMode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#CommunicationMode#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +132,8 @@
       <file leaf-file-name="RORtbl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="765">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="750">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="method#RORtbl#0;class#RORtbl#0" expanded="true" />
                 <element signature="method#addObj#0;class#RORtbl#0" expanded="true" />
@@ -84,64 +143,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculadoraCientificaImpl_stub.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl_stub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CalculadoraInterface_stub.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraInterface_stub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="600">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#CalculadoraInterface_stub#0" expanded="true" />
+                <element signature="method#soma#0;class#CalculadoraInterface_stub#0" expanded="true" />
                 <element signature="method#subtrai#0;class#CalculadoraInterface_stub#0" expanded="true" />
                 <element signature="method#multiplica#0;class#CalculadoraInterface_stub#0" expanded="true" />
                 <element signature="method#divide#0;class#CalculadoraInterface_stub#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommunicationMode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="540">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#CommunicationMode#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalculadoraCientificaImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="docComment;class#CalculadoraCientificaImpl#0" expanded="true" />
-                <element signature="method#raiz#0;class#CalculadoraCientificaImpl#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalculadoraCientifica.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,20 +193,21 @@
         <option value="$PROJECT_DIR$/src/calculadora/CalculadoraInterface.java" />
         <option value="$PROJECT_DIR$/src/calculadora/Calculadora.java" />
         <option value="$PROJECT_DIR$/rmi_specifications/src/source/SimpleRegistryServer.java" />
-        <option value="$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java" />
-        <option value="$PROJECT_DIR$/src/calculadora/Cliente.java" />
         <option value="$PROJECT_DIR$/src/calculadora/Stub.java" />
-        <option value="$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java" />
         <option value="$PROJECT_DIR$/src/calculadora/CommunicationModeServer.java" />
-        <option value="$PROJECT_DIR$/src/calculadora/CommunicationMode.java" />
         <option value="$PROJECT_DIR$/src/calculadora/CalculadoraInterface_stub.java" />
         <option value="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl.java" />
-        <option value="$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java" />
         <option value="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl_stub.java" />
         <option value="$PROJECT_DIR$/rmi_specifications/src/source/yourRMI.java" />
-        <option value="$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java" />
         <option value="$PROJECT_DIR$/src/calculadora/Package.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java" />
+        <option value="$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java" />
+        <option value="$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java" />
+        <option value="$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/CalculadoraCientificaInterface_stub.java" />
         <option value="$PROJECT_DIR$/src/calculadora/Servidor.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/calculadora/CommunicationMode.java" />
       </list>
     </option>
   </component>
@@ -769,7 +784,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29515418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30775446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31421646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -835,7 +850,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="660">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
-            <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="false" />
+            <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="true" />
             <element signature="method#localise#0;class#RemoteObjectRef#0" expanded="false" />
           </folding>
         </state>
@@ -853,7 +868,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="660">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
-            <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="false" />
+            <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="true" />
             <element signature="method#localise#0;class#RemoteObjectRef#0" expanded="false" />
           </folding>
         </state>
@@ -1036,18 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/SimpleRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="method#SimpleRegistry#0;class#SimpleRegistry#0" expanded="false" />
-            <element signature="method#lookup#0;class#SimpleRegistry#0" expanded="false" />
-            <element signature="method#rebind#0;class#SimpleRegistry#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Remote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
@@ -1086,48 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="810">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="false" />
-            <element signature="method#localise#0;class#RemoteObjectRef#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1260">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationModeServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#read#0;class#CommunicationModeServer#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Cliente#0" expanded="true" />
-            <element signature="method#main#0;class#Cliente#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
@@ -1138,29 +1099,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java">
+    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#CalculadoraCientificaImpl#0" expanded="true" />
-            <element signature="method#raiz#0;class#CalculadoraCientificaImpl#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaImpl_stub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1170,18 +1112,6 @@
         <state vertical-scroll-proportion="0.23672566" vertical-offset="688" max-vertical-offset="1365">
           <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="765">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <element signature="method#RORtbl#0;class#RORtbl#0" expanded="true" />
-            <element signature="method#addObj#0;class#RORtbl#0" expanded="true" />
-            <element signature="method#findObj#0;class#RORtbl#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,31 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraInterface_stub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="600">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#CalculadoraInterface_stub#0" expanded="true" />
-            <element signature="method#subtrai#0;class#CalculadoraInterface_stub#0" expanded="true" />
-            <element signature="method#multiplica#0;class#CalculadoraInterface_stub#0" expanded="true" />
-            <element signature="method#divide#0;class#CalculadoraInterface_stub#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="540">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#CommunicationMode#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Package.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1242,11 +1147,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/SimpleRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraInterface_stub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CalculadoraInterface_stub#0" expanded="true" />
+            <element signature="method#soma#0;class#CalculadoraInterface_stub#0" expanded="true" />
+            <element signature="method#subtrai#0;class#CalculadoraInterface_stub#0" expanded="true" />
+            <element signature="method#multiplica#0;class#CalculadoraInterface_stub#0" expanded="true" />
+            <element signature="method#divide#0;class#CalculadoraInterface_stub#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientifica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/RORtbl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="750">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="method#RORtbl#0;class#RORtbl#0" expanded="true" />
+            <element signature="method#addObj#0;class#RORtbl#0" expanded="true" />
+            <element signature="method#findObj#0;class#RORtbl#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/testRebind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmi_specifications/src/source/RemoteObjectRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="810">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="method#RemoteObjectRef#0;class#RemoteObjectRef#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculadora/Servidor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49778762" vertical-offset="900" max-vertical-offset="1695">
-          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1665">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="675">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Cliente#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/CalculadoraCientificaInterface_stub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="method#raiz#0;class#CalculadoraCientificaInterface_stub#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CommunicationMode#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calculadora/CommunicationModeServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="452">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

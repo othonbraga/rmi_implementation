@@ -26,6 +26,14 @@ public class Cliente {
 
         // get (create) the stub out of ror.
         CalculadoraInterface_stub calculadora = (CalculadoraInterface_stub) ror.localise();
-        System.out.print("soma = " + calculadora.soma(1, 1));
+        System.out.println("soma 2 + 2 = " + calculadora.soma(1, 1));
+
+        //calculadora cientfica
+
+        Thread.sleep(1000);
+
+        RemoteObjectRef rorCaclCientifica = sr.lookup("calculadoraCientifica");
+        CalculadoraCientificaInterface_stub calcCientifica = (CalculadoraCientificaInterface_stub) rorCaclCientifica.localise();
+        System.out.println("raiz 4 = "+ calcCientifica.raiz(4));
     }
 }

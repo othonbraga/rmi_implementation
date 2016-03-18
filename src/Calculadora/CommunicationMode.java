@@ -10,11 +10,6 @@ public class CommunicationMode {
     static public float calc(int serviceKey, String oparation, float[] attr) throws IOException, ClassNotFoundException {
         Socket socket = new Socket("127.0.0.1", 3121);
         System.out.println("stub inicializado");
-//
-//        BufferedReader in =
-//                new BufferedReader(new InputStreamReader(socket.getInputStream()));
-//        PrintWriter out =
-//                new PrintWriter(socket.getOutputStream(), true);
 
         ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
         ObjectInputStream in = new ObjectInputStream(socket.getInputStream());

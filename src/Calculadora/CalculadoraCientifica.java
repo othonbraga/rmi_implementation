@@ -1,13 +1,12 @@
 package calculadora;
-
-import java.io.IOException;
-import java.io.Serializable;
-
 /**
  * Created by curinga on 18/03/16.
  */
-public interface CalculadoraCientifica extends Serializable {
+public class CalculadoraCientifica implements CalculadoraCientificaInterface {
 
-    public double raiz(float r) throws IOException, ClassNotFoundException;
-
+    @Override
+    public double raiz(float r) {
+        System.out.println("raizou");
+        return Math.sqrt(r);
+    }
 }

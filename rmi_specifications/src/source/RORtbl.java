@@ -39,7 +39,6 @@ public class RORtbl {
     public Object findObj(int serviceKey) {
         // if you use a hash table this is easy.
         Object o = table.get(serviceKey);
-        System.out.println("beleza: "+o.getClass());
         return o;
     }
 }

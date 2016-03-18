@@ -14,11 +14,17 @@ public class testRebind {
         int port = Integer.parseInt("3122");
 
         // these are data.
-        String ServiceName = "calculadora";
+//        String ServiceName = "calculadora";
+//        String IPAdr = "127.0.0.1";
+//        int PortNum = Integer.parseInt("3121");
+//        int ObjKey = Integer.parseInt("1");
+//        String InterfaceName = "CalculadoraInterface";
+
+        String ServiceName = "calculadoraCientifica";
         String IPAdr = "127.0.0.1";
         int PortNum = Integer.parseInt("3121");
-        int ObjKey = Integer.parseInt("1");
-        String InterfaceName = "CalculadoraInterface";
+        int ObjKey = Integer.parseInt("2");
+        String InterfaceName = "CalculadoraCientificaInterface";
 
         // make ROR.
         RemoteObjectRef ror = new RemoteObjectRef(IPAdr, PortNum, ObjKey, InterfaceName);

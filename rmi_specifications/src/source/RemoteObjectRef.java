@@ -39,7 +39,7 @@ public class RemoteObjectRef implements Remote{
         //-- meu codigo inicio
 
         Class c = Class.forName("calculadora."+ Remote_Interface_Name + "_stub");
-        CalculadoraInterface_stub stub = (CalculadoraInterface_stub) c.newInstance();
+        Object stub =  c.newInstance();
 
         //-- meu codigo fim
 
