@@ -41,9 +41,6 @@ public class RemoteObjectRef implements Remote{
         Class c = Class.forName("calculadora."+ Remote_Interface_Name + "_stub");
         CalculadoraInterface_stub stub = (CalculadoraInterface_stub) c.newInstance();
 
-        //RemoteObjectRef ror = new RemoteObjectRef(IP_adr, Port, Obj_Key, Remote_Interface_Name);
-		//stub.setRor(ror);
-
         //-- meu codigo fim
 
         return stub;
