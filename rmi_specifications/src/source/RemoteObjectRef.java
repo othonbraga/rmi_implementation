@@ -15,7 +15,7 @@ public class RemoteObjectRef {
 
     // this method is important, since it is a stub creator.
     // 
-    public Object localise() {
+    public Object localise() throws IllegalAccessException, InstantiationException, ClassNotFoundException {
         // Implement this as you like: essentially you should
         // create a new stub object and returns it.
         // Assume the stub class has the name e.g.
@@ -33,6 +33,14 @@ public class RemoteObjectRef {
         // arguments etc., in a marshalled form, and CM (source.yourRMI) sends it out to
         // another place.
         // Here let it return null.
-        return null;
+
+        //-- meu codigo inicio
+
+        Class c = Class.forName(Remote_Interface_Name + "_stub");
+        Object o = c.newInstance();
+
+        //-- meu codigo fim
+
+        return o;
     }
 }

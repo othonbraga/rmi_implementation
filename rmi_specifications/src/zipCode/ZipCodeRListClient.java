@@ -25,7 +25,7 @@ public class ZipCodeRListClient {
     // (2) a service name.
     // (3) a file name as above. 
     public static void main(String[] args)
-            throws IOException {
+            throws IOException, IllegalAccessException, ClassNotFoundException, InstantiationException {
         String host = args[0];
         int port = Integer.parseInt(args[1]);
         String serviceName = args[2];
