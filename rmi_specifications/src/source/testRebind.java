@@ -10,15 +10,15 @@ public class testRebind {
             throws IOException {
         // it takes seven arguments.
         // these are it wishes to connect to.
-        String host = args[0];
-        int port = Integer.parseInt(args[1]);
+        String host = "127.0.0.1";
+        int port = Integer.parseInt("12345");
 
         // these are data.
-        String ServiceName = args[2];
-        String IPAdr = args[3];
-        int PortNum = Integer.parseInt(args[4]);
-        int ObjKey = Integer.parseInt(args[5]);
-        String InterfaceName = args[6];
+        String ServiceName = "calculadora";
+        String IPAdr = "127.0.0.1";
+        int PortNum = Integer.parseInt("12345");
+        int ObjKey = Integer.parseInt("23");
+        String InterfaceName = "Calculadora";
 
         // make ROR.
         RemoteObjectRef ror = new RemoteObjectRef(IPAdr, PortNum, ObjKey, InterfaceName);

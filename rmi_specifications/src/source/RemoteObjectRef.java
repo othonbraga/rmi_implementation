@@ -36,7 +36,7 @@ public class RemoteObjectRef {
 
         //-- meu codigo inicio
 
-        Class c = Class.forName(Remote_Interface_Name + "_stub");
+        Class c = Class.forName(Remote_Interface_Name);
         Object o = c.newInstance();
 
         //-- meu codigo fim

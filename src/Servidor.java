@@ -1,6 +1,8 @@
 import source.RORtbl;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,7 +18,7 @@ public class Servidor {
         String InitialClassName = "Calculadora";
         String registryHost = "127.0.0.1";
         int registryPort = Integer.parseInt("3021");
-        String serviceName = "soma";
+        String serviceName = "calculadora";
 
         host = (InetAddress.getLocalHost()).getHostName();
         port = 12345;
@@ -62,29 +64,19 @@ public class Servidor {
 
             Socket cliente = serverSoc.accept();
 
-            System.out.print("chegou!");
-
-//            InputStream in = new InputStream() {
-//                @Override
-//                public int read() throws IOException {
-//                    System.out.print("entrou aqui!");
-//                    return 1;
-//                }
-//            };
-//            OutputStream out = new OutputStream() {
-//                @Override
-//                public void write(int b) throws IOException {
-//                    System.out.print("I am a simple registry.");
-//                }
-//            };
-
-            BufferedReader in =
-                    new BufferedReader(new InputStreamReader(cliente.getInputStream()));
-            PrintWriter out =
-                    new PrintWriter(cliente.getOutputStream(), true);
-
-            System.out.print(in.readLine());
-            out.write("I am a simple registry.");
+            InputStream in = new InputStream() {
+                @Override
+                public int read() throws IOException {
+                    System.out.print("entrou aqui!");
+                    return 1;
+                }
+            };
+            OutputStream out = new OutputStream() {
+                @Override
+                public void write(int b) throws IOException {
+                    System.out.print("I am a simple registry.");
+                }
+            };
 
             //Object invocation = tbl.findObj((RemoteObjectRef) in.readObject()); // nao tenho certeza disso
         }

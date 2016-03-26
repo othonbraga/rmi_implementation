@@ -15,16 +15,15 @@ public class Cliente {
         String InitialClassName = "Calculadora";
         String host = "127.0.0.1";
         int port = Integer.parseInt("12345");
-        String serviceName = "soma";
+        String serviceName = "calculadora";
 
         // locate the registry and get ror.
         SimpleRegistry sr =
                 LocateSimpleRegistry.getRegistry(host, port);
-        System.out.print("iniciou!");
         RemoteObjectRef ror = sr.lookup(serviceName);
 
         // get (create) the stub out of ror.
-        //Calculadora calculadora = (Calculadora) ror.localise();
-        System.out.print("interfaces " + ror.localise().equals(Calculadora.class));
+        Calculadora calculadora = (Calculadora) ror.localise();
+        System.out.print("soma = " + calculadora.soma(1, 1));
     }
 }
